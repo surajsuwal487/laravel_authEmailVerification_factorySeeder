@@ -1,0 +1,110 @@
+.article-card-img img,
+.blog-card-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: all 0.5s ease;
+}
+.blog-card {
+	box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 34%);;
+	-webkit-box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 34%);;
+	-moz-box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 34%);;
+}
+.blog-card-img {
+	height: 245px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.blog-card-content {
+	padding: 15px;
+	transition: all 0.5s ease;
+	background: #fff;
+}
+.blog-card-date {
+	color: #5a5a5a;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.blog-card-title h4 a{
+	font-size: 16px;
+	color: #22262A;
+	font-weight: 600;
+	margin-bottom: 10px;
+	display: block;
+	transition: all 0.5s ease;
+}
+.blog-card-text p {
+	color: 35a5a5a;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.blog-btn {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 160px;
+	visibility: hidden;
+	opacity: 0;
+}
+.blog-btn:hover {
+	background: var(--header-bg);
+	color: #fff;
+}
+.blog-card:hover .blog-btn {
+	visibility: visible;
+	opacity: 1;
+	bottom: 25px;
+}
+.blog-card:hover .blog-card-title h4 a{
+	color: #1CD9AD;
+}
+.blog-card-detail .blog-card-img {
+	margin-top: 70px;
+	height: 500px;
+}
+.blog-card-detail .blog-card-content {
+	padding: 25px;
+		box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 34%);;
+	-webkit-box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 34%);;
+	-moz-box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 34%);;
+}
+.blog-card-detail .blog-card-text p {
+	margin-bottom: 20px;
+}
+.article-card {
+	position: relative;
+}
+.article-card-img {
+	height: 350px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.article-card-img:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.article-card-title {
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+	color: #fff;
+}
+.article-card-title h6  {
+	color: #fff;
+	position: relative;
+	z-index: 2;
+}
+.article-card:hover .article-card-img img {
+	transform: scale(1.2);
+}
+.article-card:hover .article-card-img:before {
+	background: rgba(0, 0, 0, 0.5);
+}
+
