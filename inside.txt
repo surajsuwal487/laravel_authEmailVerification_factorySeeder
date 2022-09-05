@@ -1,0 +1,5 @@
+seeder
+factory
+verify email
+query builder
+laravel backup
